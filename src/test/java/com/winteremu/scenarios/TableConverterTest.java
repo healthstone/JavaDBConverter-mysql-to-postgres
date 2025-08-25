@@ -1,4 +1,4 @@
-package com.winteremu.projects;
+package com.winteremu.scenarios;
 
 import com.winteremu.entity.mysql.MysqlItemTemplate;
 import com.winteremu.framework.basetests.BaseTest;
