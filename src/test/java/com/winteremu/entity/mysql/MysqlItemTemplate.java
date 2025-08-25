@@ -342,7 +342,7 @@ public class MysqlItemTemplate {
     private Long lockId;
 
     @Column(name = "Material", columnDefinition = "TINYINT NOT NULL DEFAULT '0'")
-    private Byte material;
+    private Short material;
 
     @Column(name = "sheath", columnDefinition = "TINYINT UNSIGNED NOT NULL DEFAULT '0'")
     private Short sheath;
