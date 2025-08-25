@@ -18,7 +18,7 @@ public class MysqlItemTemplate {
     private Short subclass;
 
     @Column(name = "SoundOverrideSubclass", columnDefinition = "TINYINT NOT NULL DEFAULT '-1'")
-    private Byte soundOverrideSubclass;
+    private Short soundOverrideSubclass;
 
     @Column(name = "name", columnDefinition = "VARCHAR(255) NOT NULL DEFAULT ''")
     private String name;
@@ -376,19 +376,19 @@ public class MysqlItemTemplate {
 
     // Сокеты
     @Column(name = "socketColor_1", columnDefinition = "TINYINT NOT NULL DEFAULT '0'")
-    private Byte socketColor1;
+    private Short socketColor1;
 
     @Column(name = "socketContent_1", columnDefinition = "INT NOT NULL DEFAULT '0'")
     private Integer socketContent1;
 
     @Column(name = "socketColor_2", columnDefinition = "TINYINT NOT NULL DEFAULT '0'")
-    private Byte socketColor2;
+    private Short socketColor2;
 
     @Column(name = "socketContent_2", columnDefinition = "INT NOT NULL DEFAULT '0'")
     private Integer socketContent2;
 
     @Column(name = "socketColor_3", columnDefinition = "TINYINT NOT NULL DEFAULT '0'")
-    private Byte socketColor3;
+    private Short socketColor3;
 
     @Column(name = "socketContent_3", columnDefinition = "INT NOT NULL DEFAULT '0'")
     private Integer socketContent3;

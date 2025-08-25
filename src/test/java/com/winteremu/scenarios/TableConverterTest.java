@@ -13,6 +13,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Tag("all-table")
@@ -28,19 +29,21 @@ public class TableConverterTest extends BaseTest {
     public void convertTableItemTemplate() {
         Query<MysqlItemTemplate> query = mysqlDatabaseSession.createQuery("from MysqlItemTemplate", MysqlItemTemplate.class);
         List<MysqlItemTemplate> mysqlTable = query.getResultList();
-        Integer count = mysqlTable.size();
-        logger.info("mysqlTable have [{}] rows", count);
+        Integer counter = mysqlTable.size();
+        Integer batchSize = 200;
+        Integer batchCounter = 0;
+        logger.info("mysqlTable have [{}] rows", counter);
 
-        try{
-            for (MysqlItemTemplate mysql: mysqlTable) {
-                postgresDatabaseSession.beginTransaction();
+        try {
+            for (int i = 0; i < mysqlTable.size(); i++) {
+                MysqlItemTemplate mysql = mysqlTable.get(i);
                 PostgresItemTemplate postgres = new PostgresItemTemplate();
 
                 // Перенос всех полей
                 postgres.setEntry(mysql.getEntry());
                 postgres.setClass_(mysql.getClass_());
                 postgres.setSubclass(mysql.getSubclass());
-                postgres.setSoundOverrideSubclass(mysql.getSoundOverrideSubclass().shortValue());
+                postgres.setSoundOverrideSubclass(mysql.getSoundOverrideSubclass());
                 postgres.setName(mysql.getName());
                 postgres.setDisplayId(mysql.getDisplayId().intValue());
                 postgres.setQuality(mysql.getQuality());
@@ -198,11 +201,20 @@ public class TableConverterTest extends BaseTest {
                 postgres.setFlagsCustom(mysql.getFlagsCustom().intValue());
                 postgres.setVerifiedBuild(mysql.getVerifiedBuild());
                 postgresDatabaseSession.persist(postgres);
-                postgresDatabaseSession.getTransaction().commit();
 
-                count--;
-                logger.info("remain : " + count);
+                batchCounter++;
+                counter--;
+
+                if (batchCounter.equals(batchSize) || counter.equals(0)) {
+                    batchCounter = 0;
+                    postgresDatabaseSession.beginTransaction();
+                    postgresDatabaseSession.getTransaction().commit();
+
+                    logger.info("remains {} rows", counter);
+                }
             }
+
+            logger.info("postgresTable successfully handled");
         } catch (Exception ex) {
             logger.warn(ex.getMessage());
             postgresDatabaseSession.getTransaction().rollback();
