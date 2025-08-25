@@ -1,0 +1,6 @@
+---
+database_mysql:
+  datasource: "mysql.cfg.xml"
+
+database_postgres:
+  datasource: "postgres.cfg.xml"

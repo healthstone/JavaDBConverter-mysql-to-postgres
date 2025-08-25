@@ -1,0 +1,19 @@
+        <!-- hibernate-test.cfg.xml -->
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings for testing -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://185.185.59.232:58995/postgres</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">postgres</property>
+
+        <!-- Other Hibernate properties -->
+        <property name="hibernate.c3p0.min_size">0</property>
+        <property name="hibernate.c3p0.max_size">12</property>
+        <property name="hibernate.c3p0.max_statements">12</property>
+
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.format_sql">true</property>
+        <!-- ... -->
+    </session-factory>
+</hibernate-configuration>
