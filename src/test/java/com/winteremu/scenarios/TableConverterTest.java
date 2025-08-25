@@ -211,6 +211,7 @@ public class TableConverterTest extends BaseTest {
                     postgresDatabaseSession.getTransaction().commit();
 
                     logger.info("remains {} rows", counter);
+                    postgresDatabaseSession.clear();
                 }
             }
 
