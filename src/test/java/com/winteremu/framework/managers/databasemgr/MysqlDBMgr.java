@@ -1,6 +1,7 @@
 package com.winteremu.framework.managers.databasemgr;
 
 import com.winteremu.entity.mysql.MysqlDbcCharStartOutfit;
+import com.winteremu.entity.mysql.MysqlDbcSkillLine;
 import com.winteremu.entity.mysql.MysqlItemTemplate;
 import com.winteremu.entity.mysql.MysqlDbcSkillRaceClassInfo;
 import jakarta.inject.Singleton;
@@ -69,6 +70,7 @@ public class MysqlDBMgr {
         try {
             sessionFactory =
                     new MetadataSources(registry)
+                            .addAnnotatedClass(MysqlDbcSkillLine.class)
                             .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(MysqlDbcCharStartOutfit.class)
                             .addAnnotatedClass(MysqlItemTemplate.class)
