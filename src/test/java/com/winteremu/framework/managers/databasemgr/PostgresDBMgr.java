@@ -1,5 +1,6 @@
 package com.winteremu.framework.managers.databasemgr;
 
+import com.winteremu.entity.postgres.PgDbcCharStartOutfit;
 import com.winteremu.entity.postgres.PostgresItemTemplate;
 import com.winteremu.framework.config.database.DatabaseCfg;
 import com.winteremu.framework.managers.configmgr.ConfigMgr;
@@ -67,6 +68,7 @@ public class PostgresDBMgr {
         try {
             sessionFactory =
                     new MetadataSources(registry)
+                            .addAnnotatedClass(PgDbcCharStartOutfit.class)
                             .addAnnotatedClass(PostgresItemTemplate.class)
                             .buildMetadata()
                             .buildSessionFactory();

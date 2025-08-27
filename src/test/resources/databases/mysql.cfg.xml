@@ -3,7 +3,7 @@
     <session-factory>
         <!-- Database connection settings for testing -->
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:58996/world</property>
+        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:58996/dbc</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">root</property>
 

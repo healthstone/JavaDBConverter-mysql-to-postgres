@@ -1,5 +1,6 @@
 package com.winteremu.framework.managers.databasemgr;
 
+import com.winteremu.entity.mysql.MysqlDbcCharStartOutfit;
 import com.winteremu.entity.mysql.MysqlItemTemplate;
 import jakarta.inject.Singleton;
 import jakarta.persistence.EntityManager;
@@ -67,6 +68,7 @@ public class MysqlDBMgr {
         try {
             sessionFactory =
                     new MetadataSources(registry)
+                            .addAnnotatedClass(MysqlDbcCharStartOutfit.class)
                             .addAnnotatedClass(MysqlItemTemplate.class)
                             .buildMetadata()
                             .buildSessionFactory();
