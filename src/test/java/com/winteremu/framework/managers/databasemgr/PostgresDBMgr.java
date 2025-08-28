@@ -68,6 +68,7 @@ public class PostgresDBMgr {
             sessionFactory =
                     new MetadataSources(registry)
                             .addAnnotatedClass(PgDbcAchievement.class)
+                            .addAnnotatedClass(PgDbcAchievementCriteria.class)
                             .addAnnotatedClass(PgDbcSkillLine.class)
                             .addAnnotatedClass(PgDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(PgDbcCharStartOutfit.class)

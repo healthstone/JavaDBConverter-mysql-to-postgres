@@ -68,6 +68,7 @@ public class MysqlDBCDBMgr {
             sessionFactory =
                     new MetadataSources(registry)
                             .addAnnotatedClass(MysqlDbcAchievement.class)
+                            .addAnnotatedClass(MysqlDbcAchievementCriteria.class)
                             .addAnnotatedClass(MysqlDbcSkillLine.class)
                             .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(MysqlDbcCharStartOutfit.class)
