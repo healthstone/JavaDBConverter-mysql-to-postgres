@@ -2,8 +2,10 @@ package com.winteremu.framework.managers.databasemgr;
 
 import com.winteremu.entity.mysql.MysqlDbcCharStartOutfit;
 import com.winteremu.entity.mysql.MysqlDbcSkillLine;
-import com.winteremu.entity.mysql.MysqlItemTemplate;
 import com.winteremu.entity.mysql.MysqlDbcSkillRaceClassInfo;
+import com.winteremu.entity.mysql.MysqlItemTemplate;
+import com.winteremu.framework.config.database.DatabaseCfg;
+import com.winteremu.framework.managers.configmgr.ConfigMgr;
 import jakarta.inject.Singleton;
 import jakarta.persistence.EntityManager;
 import lombok.Getter;
@@ -15,12 +17,10 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.winteremu.framework.config.database.DatabaseCfg;
-import com.winteremu.framework.managers.configmgr.ConfigMgr;
 
 @Singleton
-public class MysqlDBMgr {
-    private static final Logger logger = LoggerFactory.getLogger("MysqlDBMgr");
+public class MysqlWorldDBMgr {
+    private static final Logger logger = LoggerFactory.getLogger("MysqlWorldDBMgr");
 
     @Getter
     private static SessionFactory sessionFactory;
@@ -28,7 +28,7 @@ public class MysqlDBMgr {
     private static StandardServiceRegistry registry;
 
     public static void initialize() {
-        DatabaseCfg databaseCfg = ConfigMgr.getConfig().getDatabase_mysql();
+        DatabaseCfg databaseCfg = ConfigMgr.getConfig().getDatabase_mysql_world();
         if (databaseCfg != null && !StringUtils.isEmpty(databaseCfg.getDatasource())) {
             loadConfigFile("databases/" + databaseCfg.getDatasource());
             createSessionFactory();
@@ -70,9 +70,6 @@ public class MysqlDBMgr {
         try {
             sessionFactory =
                     new MetadataSources(registry)
-                            .addAnnotatedClass(MysqlDbcSkillLine.class)
-                            .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
-                            .addAnnotatedClass(MysqlDbcCharStartOutfit.class)
                             .addAnnotatedClass(MysqlItemTemplate.class)
                             .buildMetadata()
                             .buildSessionFactory();

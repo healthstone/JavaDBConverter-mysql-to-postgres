@@ -7,15 +7,20 @@ import org.hibernate.Session;
 
 public abstract class BaseTest {
     @Setter
-    protected Session mysqlDatabaseSession;
+    protected Session mysqlDBCDatabaseSession;
+    @Setter
+    protected Session mysqlWorldDatabaseSession;
     @Setter
     protected Session postgresDatabaseSession;
 
     protected StepContext stepContext = new StepContext();
 
     public void closeDatabaseSession() {
-        if (mysqlDatabaseSession != null) {
-            mysqlDatabaseSession.close();
+        if (mysqlDBCDatabaseSession != null) {
+            mysqlDBCDatabaseSession.close();
+        }
+        if (mysqlWorldDatabaseSession != null) {
+            mysqlWorldDatabaseSession.close();
         }
         if (postgresDatabaseSession != null) {
             postgresDatabaseSession.close();

@@ -1,4 +1,4 @@
-package com.winteremu.scenarios;
+package com.winteremu.scenarios.dbc;
 
 import com.winteremu.entity.mysql.MysqlDbcCharStartOutfit;
 import com.winteremu.entity.postgres.PgDbcCharStartOutfit;
@@ -26,7 +26,7 @@ public class TableDbcCharStartOutfitTest extends BaseTest {
     @DisplayName("dbc_charstartoutfit.sql")
     @Description("Перелив данных для dbc_charstartoutfit.sql")
     public void convertTableDbcCharStartOutfit() {
-        Query<MysqlDbcCharStartOutfit> query = mysqlDatabaseSession.createQuery("from MysqlDbcCharStartOutfit", MysqlDbcCharStartOutfit.class);
+        Query<MysqlDbcCharStartOutfit> query = mysqlDBCDatabaseSession.createQuery("from MysqlDbcCharStartOutfit", MysqlDbcCharStartOutfit.class);
         List<MysqlDbcCharStartOutfit> mysqlTable = query.getResultList();
         Integer counter = mysqlTable.size();
         Integer batchSize = 200;

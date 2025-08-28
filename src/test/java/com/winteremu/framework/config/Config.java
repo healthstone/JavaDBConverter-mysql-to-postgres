@@ -8,8 +8,11 @@ import lombok.Data;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Config {
-    @JsonProperty("database_mysql")
-    private DatabaseCfg database_mysql;
+    @JsonProperty("database_mysql_dbc")
+    private DatabaseCfg database_mysql_dbc;
+    @JsonProperty("database_mysql_world")
+    private DatabaseCfg database_mysql_world;
+
     @JsonProperty("database_postgres")
     private DatabaseCfg database_postgres;
 }

@@ -1,4 +1,4 @@
-package com.winteremu.scenarios;
+package com.winteremu.scenarios.world;
 
 import com.winteremu.entity.mysql.MysqlItemTemplate;
 import com.winteremu.entity.postgres.PostgresItemTemplate;
@@ -26,7 +26,7 @@ public class TableItemTemplateTest extends BaseTest {
     @DisplayName("item_template.sql")
     @Description("Перелив данных для item_template.sql")
     public void convertTableItemTemplate() {
-        Query<MysqlItemTemplate> query = mysqlDatabaseSession.createQuery("from MysqlItemTemplate", MysqlItemTemplate.class);
+        Query<MysqlItemTemplate> query = mysqlWorldDatabaseSession.createQuery("from MysqlItemTemplate", MysqlItemTemplate.class);
         List<MysqlItemTemplate> mysqlTable = query.getResultList();
         Integer counter = mysqlTable.size();
         Integer batchSize = 200;

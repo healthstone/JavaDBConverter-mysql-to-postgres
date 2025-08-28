@@ -1,4 +1,4 @@
-package com.winteremu.scenarios;
+package com.winteremu.scenarios.dbc;
 
 import com.winteremu.entity.mysql.MysqlDbcSkillLine;
 import com.winteremu.entity.postgres.PgDbcSkillLine;
@@ -26,7 +26,7 @@ public class TableDbcSKillLineTest extends BaseTest {
     @DisplayName("dbc_skillline.sql")
     @Description("Перелив данных для dbc_skillline.sql")
     public void convertTableDbcSKillLine() {
-        Query<MysqlDbcSkillLine> query = mysqlDatabaseSession.createQuery("from MysqlDbcSkillLine", MysqlDbcSkillLine.class);
+        Query<MysqlDbcSkillLine> query = mysqlDBCDatabaseSession.createQuery("from MysqlDbcSkillLine", MysqlDbcSkillLine.class);
         List<MysqlDbcSkillLine> mysqlTable = query.getResultList();
         Integer counter = mysqlTable.size();
         Integer batchSize = 200;

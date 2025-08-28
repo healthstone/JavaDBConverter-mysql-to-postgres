@@ -1,4 +1,4 @@
-package com.winteremu.scenarios;
+package com.winteremu.scenarios.dbc;
 
 import com.winteremu.entity.mysql.MysqlDbcSkillRaceClassInfo;
 import com.winteremu.entity.postgres.PgDbcSkillRaceClassInfo;
@@ -26,7 +26,7 @@ public class TableDbcSkillRaceClassInfoTest extends BaseTest {
     @DisplayName("dbc_skillraceclassinfo.sql")
     @Description("Перелив данных для dbc_skillraceclassinfo.sql")
     public void convertTableDbcSkillRaceClassInfo() {
-        Query<MysqlDbcSkillRaceClassInfo> query = mysqlDatabaseSession.createQuery("from MysqlDbcSkillRaceClassInfo", MysqlDbcSkillRaceClassInfo.class);
+        Query<MysqlDbcSkillRaceClassInfo> query = mysqlDBCDatabaseSession.createQuery("from MysqlDbcSkillRaceClassInfo", MysqlDbcSkillRaceClassInfo.class);
         List<MysqlDbcSkillRaceClassInfo> mysqlTable = query.getResultList();
         Integer counter = mysqlTable.size();
         Integer batchSize = 200;

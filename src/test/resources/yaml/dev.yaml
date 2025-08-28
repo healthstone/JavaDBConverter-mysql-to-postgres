@@ -1,6 +1,9 @@
 ---
-database_mysql:
-  datasource: "mysql.cfg.xml"
+database_mysql_dbc:
+  datasource: "mysql-dbc.cfg.xml"
+
+database_mysql_world:
+  datasource: "mysql-world.cfg.xml"
 
 database_postgres:
   datasource: "postgres.cfg.xml"
