@@ -19,7 +19,7 @@ import java.util.List;
 @DisplayName("Заполнение данных таблиц из MySQL в PostgresSQL")
 @ExtendWith(DatabaseExtension.class)
 public class TableDbcCharStartOutfitTest extends BaseTest {
-    private static final Logger logger = LoggerFactory.getLogger("TableConverter");
+    private static final Logger logger = LoggerFactory.getLogger("TableDbcCharStartOutfitTest");
 
     @Test
     @Tag("dbc_charstartoutfit")

@@ -3,6 +3,7 @@ package com.winteremu.framework.listener;
 import com.winteremu.framework.managers.configmgr.ConfigMgr;
 import com.winteremu.framework.managers.convertermgr.ConverterMgr;
 import com.winteremu.framework.managers.databasemgr.MysqlDBCDBMgr;
+import com.winteremu.framework.managers.databasemgr.MysqlWorldDBMgr;
 import com.winteremu.framework.managers.databasemgr.PostgresDBMgr;
 import lombok.SneakyThrows;
 import org.junit.platform.launcher.TestExecutionListener;
@@ -20,6 +21,7 @@ public class CustomTestExecutionListener implements TestExecutionListener {
         ConfigMgr.initialize();
         ConverterMgr.initialize();
         MysqlDBCDBMgr.initialize();
+        MysqlWorldDBMgr.initialize();
         PostgresDBMgr.initialize();
     }
 }

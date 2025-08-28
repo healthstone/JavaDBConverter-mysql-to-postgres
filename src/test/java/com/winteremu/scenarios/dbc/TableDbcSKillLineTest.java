@@ -19,7 +19,7 @@ import java.util.List;
 @DisplayName("Заполнение данных таблиц из MySQL в PostgresSQL")
 @ExtendWith(DatabaseExtension.class)
 public class TableDbcSKillLineTest extends BaseTest {
-    private static final Logger logger = LoggerFactory.getLogger("TableDbcSKillLine");
+    private static final Logger logger = LoggerFactory.getLogger("TableDbcSKillLineTest");
 
     @Test
     @Tag("dbc_skillline")
