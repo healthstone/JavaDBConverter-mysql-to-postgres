@@ -1,6 +1,6 @@
 package com.winteremu.framework.managers.databasemgr;
 
-import com.winteremu.entity.mysql.*;
+import com.winteremu.entity.mysql.dbc.*;
 import jakarta.inject.Singleton;
 import jakarta.persistence.EntityManager;
 import lombok.Getter;
@@ -69,6 +69,7 @@ public class MysqlDBCDBMgr {
                     new MetadataSources(registry)
                             .addAnnotatedClass(MysqlDbcAchievement.class)
                             .addAnnotatedClass(MysqlDbcAchievementCriteria.class)
+                            .addAnnotatedClass(MysqlDbcAreaTable.class)
                             .addAnnotatedClass(MysqlDbcSkillLine.class)
                             .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(MysqlDbcCharStartOutfit.class)

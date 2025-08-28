@@ -69,6 +69,7 @@ public class PostgresDBMgr {
                     new MetadataSources(registry)
                             .addAnnotatedClass(PgDbcAchievement.class)
                             .addAnnotatedClass(PgDbcAchievementCriteria.class)
+                            .addAnnotatedClass(PgDbcAreaTable.class)
                             .addAnnotatedClass(PgDbcSkillLine.class)
                             .addAnnotatedClass(PgDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(PgDbcCharStartOutfit.class)

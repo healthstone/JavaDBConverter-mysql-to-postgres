@@ -1,6 +1,6 @@
 package com.winteremu.scenarios.world;
 
-import com.winteremu.entity.mysql.MysqlItemTemplate;
+import com.winteremu.entity.mysql.world.MysqlItemTemplate;
 import com.winteremu.entity.postgres.PostgresItemTemplate;
 import com.winteremu.framework.basetests.BaseTest;
 import com.winteremu.framework.extensions.DatabaseExtension;

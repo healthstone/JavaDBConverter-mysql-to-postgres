@@ -1,4 +1,4 @@
-package com.winteremu.entity.mysql;
+package com.winteremu.entity.mysql.world;
 
 import jakarta.persistence.*;
 import lombok.Data;

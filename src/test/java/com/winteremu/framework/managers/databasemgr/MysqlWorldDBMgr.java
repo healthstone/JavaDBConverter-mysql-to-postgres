@@ -1,9 +1,6 @@
 package com.winteremu.framework.managers.databasemgr;
 
-import com.winteremu.entity.mysql.MysqlDbcCharStartOutfit;
-import com.winteremu.entity.mysql.MysqlDbcSkillLine;
-import com.winteremu.entity.mysql.MysqlDbcSkillRaceClassInfo;
-import com.winteremu.entity.mysql.MysqlItemTemplate;
+import com.winteremu.entity.mysql.world.MysqlItemTemplate;
 import com.winteremu.framework.config.database.DatabaseCfg;
 import com.winteremu.framework.managers.configmgr.ConfigMgr;
 import jakarta.inject.Singleton;

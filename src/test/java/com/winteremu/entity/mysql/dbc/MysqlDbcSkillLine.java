@@ -1,4 +1,4 @@
-package com.winteremu.entity.mysql;
+package com.winteremu.entity.mysql.dbc;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

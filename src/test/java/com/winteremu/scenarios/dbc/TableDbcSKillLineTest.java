@@ -1,6 +1,6 @@
 package com.winteremu.scenarios.dbc;
 
-import com.winteremu.entity.mysql.MysqlDbcSkillLine;
+import com.winteremu.entity.mysql.dbc.MysqlDbcSkillLine;
 import com.winteremu.entity.postgres.PgDbcSkillLine;
 import com.winteremu.framework.basetests.BaseTest;
 import com.winteremu.framework.extensions.DatabaseExtension;
