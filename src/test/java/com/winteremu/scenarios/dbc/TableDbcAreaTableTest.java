@@ -1,8 +1,6 @@
 package com.winteremu.scenarios.dbc;
 
-import com.winteremu.entity.mysql.dbc.MysqlDbcAchievement;
 import com.winteremu.entity.mysql.dbc.MysqlDbcAreaTable;
-import com.winteremu.entity.postgres.PgDbcAchievement;
 import com.winteremu.entity.postgres.PgDbcAreaTable;
 import com.winteremu.framework.basetests.BaseTest;
 import com.winteremu.framework.extensions.DatabaseExtension;
