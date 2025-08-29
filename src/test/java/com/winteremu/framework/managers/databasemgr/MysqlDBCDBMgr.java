@@ -70,6 +70,7 @@ public class MysqlDBCDBMgr {
                             .addAnnotatedClass(MysqlDbcAchievement.class)
                             .addAnnotatedClass(MysqlDbcAchievementCriteria.class)
                             .addAnnotatedClass(MysqlDbcAreaTable.class)
+                            .addAnnotatedClass(MysqlDbcAreaGroup.class)
                             .addAnnotatedClass(MysqlDbcSkillLine.class)
                             .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(MysqlDbcCharStartOutfit.class)

@@ -70,6 +70,7 @@ public class PostgresDBMgr {
                             .addAnnotatedClass(PgDbcAchievement.class)
                             .addAnnotatedClass(PgDbcAchievementCriteria.class)
                             .addAnnotatedClass(PgDbcAreaTable.class)
+                            .addAnnotatedClass(PgDbcAreaGroup.class)
                             .addAnnotatedClass(PgDbcSkillLine.class)
                             .addAnnotatedClass(PgDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(PgDbcCharStartOutfit.class)
