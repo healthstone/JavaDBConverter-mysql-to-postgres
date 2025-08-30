@@ -76,6 +76,7 @@ public class MysqlDBCDBMgr {
                             .addAnnotatedClass(MysqlDbcBannedAddons.class)
                             .addAnnotatedClass(MysqlDbcBarbershopStyle.class)
                             .addAnnotatedClass(MysqlDbcCharacterFacialHairStyles.class)
+                            .addAnnotatedClass(MysqlDbcCharSections.class)
                             .addAnnotatedClass(MysqlDbcSkillLine.class)
                             .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(MysqlDbcCharStartOutfit.class)
