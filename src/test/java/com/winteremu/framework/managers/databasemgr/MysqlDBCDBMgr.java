@@ -73,6 +73,7 @@ public class MysqlDBCDBMgr {
                             .addAnnotatedClass(MysqlDbcAreaGroup.class)
                             .addAnnotatedClass(MysqlDbcAreaTrigger.class)
                             .addAnnotatedClass(MysqlDbcAuctionHouse.class)
+                            .addAnnotatedClass(MysqlDbcBannedAddons.class)
                             .addAnnotatedClass(MysqlDbcSkillLine.class)
                             .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(MysqlDbcCharStartOutfit.class)
