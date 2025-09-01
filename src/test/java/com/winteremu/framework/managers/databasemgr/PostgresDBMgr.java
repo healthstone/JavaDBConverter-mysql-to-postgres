@@ -77,6 +77,7 @@ public class PostgresDBMgr {
                             .addAnnotatedClass(PgDbcBarbershopStyle.class)
                             .addAnnotatedClass(PgDbcCharacterFacialHairstyles.class)
                             .addAnnotatedClass(PgDbcCharSections.class)
+                            .addAnnotatedClass(PgDbcCharTitles.class)
                             .addAnnotatedClass(PgDbcSkillLine.class)
                             .addAnnotatedClass(PgDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(PgDbcCharStartOutfit.class)
