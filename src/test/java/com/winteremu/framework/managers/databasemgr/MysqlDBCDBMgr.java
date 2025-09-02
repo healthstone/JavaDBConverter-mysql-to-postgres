@@ -78,6 +78,8 @@ public class MysqlDBCDBMgr {
                             .addAnnotatedClass(MysqlDbcCharacterFacialHairStyles.class)
                             .addAnnotatedClass(MysqlDbcCharSections.class)
                             .addAnnotatedClass(MysqlDbcCharTitles.class)
+                            .addAnnotatedClass(MysqlDbcCreatureDisplayInfo.class)
+                            .addAnnotatedClass(MysqlDbcCreatureDisplayInfoExtra.class)
                             .addAnnotatedClass(MysqlDbcSkillLine.class)
                             .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(MysqlDbcCharStartOutfit.class)
