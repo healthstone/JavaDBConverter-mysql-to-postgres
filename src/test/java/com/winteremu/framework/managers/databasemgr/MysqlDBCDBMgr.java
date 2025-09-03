@@ -80,6 +80,7 @@ public class MysqlDBCDBMgr {
                             .addAnnotatedClass(MysqlDbcCharTitles.class)
                             .addAnnotatedClass(MysqlDbcCreatureDisplayInfo.class)
                             .addAnnotatedClass(MysqlDbcCreatureDisplayInfoExtra.class)
+                            .addAnnotatedClass(MysqlDbcCreatureFamily.class)
                             .addAnnotatedClass(MysqlDbcSkillLine.class)
                             .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(MysqlDbcCharStartOutfit.class)
