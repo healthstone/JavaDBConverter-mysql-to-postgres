@@ -84,6 +84,7 @@ public class PostgresDBMgr {
                             .addAnnotatedClass(PgDbcCreatureModelData.class)
                             .addAnnotatedClass(PgDbcCreatureSpellData.class)
                             .addAnnotatedClass(PgDbcDungeonEncounter.class)
+                            .addAnnotatedClass(PgDbcDurabilityCosts.class)
                             .addAnnotatedClass(PgDbcSkillLine.class)
                             .addAnnotatedClass(PgDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(PgDbcCharStartOutfit.class)
