@@ -83,6 +83,7 @@ public class MysqlDBCDBMgr {
                             .addAnnotatedClass(MysqlDbcCreatureFamily.class)
                             .addAnnotatedClass(MysqlDbcCreatureModelData.class)
                             .addAnnotatedClass(MysqlDbcCreatureSpellData.class)
+                            .addAnnotatedClass(MysqlDbcDungeonEncounter.class)
                             .addAnnotatedClass(MysqlDbcSkillLine.class)
                             .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(MysqlDbcCharStartOutfit.class)
