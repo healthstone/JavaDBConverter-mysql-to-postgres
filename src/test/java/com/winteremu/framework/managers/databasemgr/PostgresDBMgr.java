@@ -91,6 +91,8 @@ public class PostgresDBMgr {
                             .addAnnotatedClass(PgDbcFaction.class)
                             .addAnnotatedClass(PgDbcFactionTemplate.class)
                             .addAnnotatedClass(PgDbcGameObjectDisplayInfo.class)
+                            .addAnnotatedClass(PgDbcGemProperties.class)
+                            .addAnnotatedClass(PgDbcGlyphProperties.class)
                             .addAnnotatedClass(PgDbcSkillLine.class)
                             .addAnnotatedClass(PgDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(PgDbcCharStartOutfit.class)

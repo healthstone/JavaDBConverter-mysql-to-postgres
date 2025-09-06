@@ -91,6 +91,8 @@ public class MysqlDBCDBMgr {
                             .addAnnotatedClass(MysqlDbcFaction.class)
                             .addAnnotatedClass(MysqlDbcFactionTemplate.class)
                             .addAnnotatedClass(MysqlDbcGameObjectDisplayInfo.class)
+                            .addAnnotatedClass(MysqlDbcGemProperties.class)
+                            .addAnnotatedClass(MysqlDbcGlyphProperties.class)
                             .addAnnotatedClass(MysqlDbcSkillLine.class)
                             .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(MysqlDbcCharStartOutfit.class)
