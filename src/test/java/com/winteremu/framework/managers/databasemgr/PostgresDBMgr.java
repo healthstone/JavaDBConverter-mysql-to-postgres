@@ -90,6 +90,7 @@ public class PostgresDBMgr {
                             .addAnnotatedClass(PgDbcEmotesTextSound.class)
                             .addAnnotatedClass(PgDbcFaction.class)
                             .addAnnotatedClass(PgDbcFactionTemplate.class)
+                            .addAnnotatedClass(PgDbcGameObjectDisplayInfo.class)
                             .addAnnotatedClass(PgDbcSkillLine.class)
                             .addAnnotatedClass(PgDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(PgDbcCharStartOutfit.class)

@@ -90,6 +90,7 @@ public class MysqlDBCDBMgr {
                             .addAnnotatedClass(MysqlDbcEmotesTextSound.class)
                             .addAnnotatedClass(MysqlDbcFaction.class)
                             .addAnnotatedClass(MysqlDbcFactionTemplate.class)
+                            .addAnnotatedClass(MysqlDbcGameObjectDisplayInfo.class)
                             .addAnnotatedClass(MysqlDbcSkillLine.class)
                             .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(MysqlDbcCharStartOutfit.class)
