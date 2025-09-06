@@ -93,6 +93,7 @@ public class PostgresDBMgr {
                             .addAnnotatedClass(PgDbcGameObjectDisplayInfo.class)
                             .addAnnotatedClass(PgDbcGemProperties.class)
                             .addAnnotatedClass(PgDbcGlyphProperties.class)
+                            .addAnnotatedClass(PgDbcGtCombatRatings.class)
                             .addAnnotatedClass(PgDbcSkillLine.class)
                             .addAnnotatedClass(PgDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(PgDbcCharStartOutfit.class)
