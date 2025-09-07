@@ -102,6 +102,7 @@ public class MysqlDBCDBMgr {
                             .addAnnotatedClass(MysqlDbcGtRegenHpPerSpt.class)
                             .addAnnotatedClass(MysqlDbcGtRegenMpPerSpt.class)
                             .addAnnotatedClass(MysqlDbcHolidays.class)
+                            .addAnnotatedClass(MysqlDbcItem.class)
                             .addAnnotatedClass(MysqlDbcSkillLine.class)
                             .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(MysqlDbcCharStartOutfit.class)

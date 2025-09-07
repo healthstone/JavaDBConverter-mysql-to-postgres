@@ -102,6 +102,7 @@ public class PostgresDBMgr {
                             .addAnnotatedClass(PgDbcGtRegenHpPerSpt.class)
                             .addAnnotatedClass(PgDbcGtRegenMpPerSpt.class)
                             .addAnnotatedClass(PgDbcHolidays.class)
+                            .addAnnotatedClass(PgDbcItem.class)
                             .addAnnotatedClass(PgDbcSkillLine.class)
                             .addAnnotatedClass(PgDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(PgDbcCharStartOutfit.class)
