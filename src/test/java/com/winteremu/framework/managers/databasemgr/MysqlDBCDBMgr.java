@@ -94,6 +94,8 @@ public class MysqlDBCDBMgr {
                             .addAnnotatedClass(MysqlDbcGemProperties.class)
                             .addAnnotatedClass(MysqlDbcGlyphProperties.class)
                             .addAnnotatedClass(MysqlDbcGtCombatRatings.class)
+                            .addAnnotatedClass(MysqlDbcGtChanceToMeleeCrit.class)
+                            .addAnnotatedClass(MysqlDbcGtChanceToSpellCrit.class)
                             .addAnnotatedClass(MysqlDbcSkillLine.class)
                             .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(MysqlDbcCharStartOutfit.class)
