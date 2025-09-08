@@ -106,6 +106,7 @@ public class MysqlDBCDBMgr {
                             .addAnnotatedClass(MysqlDbcItemDisplayInfo.class)
                             .addAnnotatedClass(MysqlDbcItemExtendedCost.class)
                             .addAnnotatedClass(MysqlDbcItemLimitCategory.class)
+                            .addAnnotatedClass(MysqlDbcItemRandomProperties.class)
                             .addAnnotatedClass(MysqlDbcSkillLine.class)
                             .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(MysqlDbcCharStartOutfit.class)
