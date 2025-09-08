@@ -109,6 +109,7 @@ public class PostgresDBMgr {
                             .addAnnotatedClass(PgDbcItemRandomProperties.class)
                             .addAnnotatedClass(PgDbcItemRandomSuffix.class)
                             .addAnnotatedClass(PgDbcItemSet.class)
+                            .addAnnotatedClass(PgDbcLfgDungeons.class)
                             .addAnnotatedClass(PgDbcSkillLine.class)
                             .addAnnotatedClass(PgDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(PgDbcCharStartOutfit.class)
