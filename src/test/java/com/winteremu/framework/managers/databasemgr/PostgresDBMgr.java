@@ -111,6 +111,8 @@ public class PostgresDBMgr {
                             .addAnnotatedClass(PgDbcItemSet.class)
                             .addAnnotatedClass(PgDbcLfgDungeons.class)
                             .addAnnotatedClass(PgDbcLight.class)
+                            .addAnnotatedClass(PgDbcLock.class)
+                            .addAnnotatedClass(PgDbcMailTemplate.class)
                             .addAnnotatedClass(PgDbcSkillLine.class)
                             .addAnnotatedClass(PgDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(PgDbcCharStartOutfit.class)
