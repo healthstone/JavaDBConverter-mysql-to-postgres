@@ -2,10 +2,10 @@
 <hibernate-configuration>
     <session-factory>
         <!-- Database connection settings for testing -->
-        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:58996/world</property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mariadb://185.185.59.232:58996/world?useSSL=false</property>
+        <property name="hibernate.connection.username">asd</property>
+        <property name="hibernate.connection.password">123456</property>
 
         <!-- Other Hibernate properties -->
         <property name="hibernate.c3p0.min_size">0</property>

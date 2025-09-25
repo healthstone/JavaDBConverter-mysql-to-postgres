@@ -120,9 +120,15 @@ public class MysqlDBCDBMgr {
                             .addAnnotatedClass(MysqlDbcPvpDifficulty.class)
                             .addAnnotatedClass(MysqlDbcQuestXp.class)
                             .addAnnotatedClass(MysqlDbcRandPropPoints.class)
+                            .addAnnotatedClass(MysqlDbcScalingStatDistribution.class)
+                            .addAnnotatedClass(MysqlDbcScalingStatValues.class)
                             .addAnnotatedClass(MysqlDbcSkillLine.class)
+                            .addAnnotatedClass(MysqlDbcSkillLineAbility.class)
                             .addAnnotatedClass(MysqlDbcSkillRaceClassInfo.class)
                             .addAnnotatedClass(MysqlDbcCharStartOutfit.class)
+                            .addAnnotatedClass(MysqlDbcSoundEntries.class)
+                            .addAnnotatedClass(MysqlDbcSpell.class)
+                            .addAnnotatedClass(MysqlDbcSpellCastTimes.class)
                             .buildMetadata()
                             .buildSessionFactory();
             logger.info("has been initialized successfully");

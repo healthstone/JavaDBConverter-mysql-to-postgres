@@ -11,6 +11,7 @@
     <logger name="org.openqa.selenium" level="WARN"/>
     <logger name="com.mchange" level="WARN"/>
     <logger name="org.apache.kafka" level="WARN"/>
+    <logger name="org.mariadb.jdbc" level="WARN"/>
 
     <root level="debug">
         <appender-ref ref="STDOUT" />
