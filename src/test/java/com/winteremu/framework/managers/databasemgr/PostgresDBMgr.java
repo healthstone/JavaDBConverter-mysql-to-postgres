@@ -1,5 +1,6 @@
 package com.winteremu.framework.managers.databasemgr;
 
+import com.winteremu.entity.mysql.dbc.*;
 import com.winteremu.entity.postgres.*;
 import com.winteremu.framework.config.database.DatabaseCfg;
 import com.winteremu.framework.managers.configmgr.ConfigMgr;
@@ -129,6 +130,30 @@ public class PostgresDBMgr {
                             .addAnnotatedClass(PgDbcSoundEntries.class)
                             .addAnnotatedClass(PgDbcSpell.class)
                             .addAnnotatedClass(PgDbcSpellCastTimes.class)
+                            .addAnnotatedClass(PgDbcSpellCategory.class)
+                            .addAnnotatedClass(PgDbcSpellDifficulty.class)
+                            .addAnnotatedClass(PgDbcSpellDuration.class)
+                            .addAnnotatedClass(PgDbcSpellFocusObject.class)
+                            .addAnnotatedClass(PgDbcSpellItemEnchantment.class)
+                            .addAnnotatedClass(PgDbcSpellRuneCost.class)
+                            .addAnnotatedClass(PgDbcSpellShapeshiftForm.class)
+                            .addAnnotatedClass(PgDbcSpellVisual.class)
+                            .addAnnotatedClass(PgDbcSummonProperties.class)
+                            .addAnnotatedClass(PgDbcTalent.class)
+                            .addAnnotatedClass(PgDbcTalentTab.class)
+                            .addAnnotatedClass(PgDbcTaxiNodes.class)
+                            .addAnnotatedClass(PgDbcTaxiPath.class)
+                            .addAnnotatedClass(PgDbcTaxiPathNode.class)
+                            .addAnnotatedClass(PgDbcTeamContributionPoints.class)
+                            .addAnnotatedClass(PgDbcTotemCategory.class)
+                            .addAnnotatedClass(PgDbcTransportAnimation.class)
+                            .addAnnotatedClass(PgDbcTransportRotation.class)
+                            .addAnnotatedClass(PgDbcVehicle.class)
+                            .addAnnotatedClass(PgDbcVehicleSeat.class)
+                            .addAnnotatedClass(PgDbcWmoAreaTable.class)
+                            .addAnnotatedClass(PgDbcWorldMapArea.class)
+                            .addAnnotatedClass(PgDbcWorldMapOverlay.class)
+                            .addAnnotatedClass(PgDbcWorldSafeLocs.class)
                             .addAnnotatedClass(PostgresItemTemplate.class)
                             .buildMetadata()
                             .buildSessionFactory();

@@ -3,7 +3,7 @@
     <session-factory>
         <!-- Database connection settings for testing -->
         <property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mariadb://185.185.59.232:58996/dbc?useSSL=false</property>
+        <property name="hibernate.connection.url">jdbc:mariadb://localhost:3306/dbc?useSSL=false</property>
         <property name="hibernate.connection.username">asd</property>
         <property name="hibernate.connection.password">123456</property>
 
